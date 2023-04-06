@@ -18,10 +18,7 @@ export default class List1 extends React.Component {
     render(){
 
         return(
-            <Box>
-                <h1>Desafio 1</h1>
-                <h2>{this.state.name} {this.state.lastName} {this.state.age} anos</h2>
-                <p>A má prática ocorre pelo fato de chamar vários setStates sem necessidade, já que tudo poderia ser feito em uma linha só.</p>
+            <Box h1='Desafio 1' h2={`${this.state.name} ${this.state.lastName} ${this.state.age} anos`} p='A má prática ocorre pelo fato de chamar vários setStates sem necessidade, já que tudo poderia ser feito em uma linha só.' >
                     <Button onClick={this.updateMyState} >
                         Change state
                     </Button>
@@ -29,3 +26,5 @@ export default class List1 extends React.Component {
         )
     }
 }
+
+{/* <h2>{this.state.name} {this.state.lastName} {this.state.age} anos</h2> */}

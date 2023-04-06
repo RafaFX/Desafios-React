@@ -10,18 +10,18 @@ export default class List4 extends React.Component{
         this.state ={
             name: 'Rafael'
         }
+        this.updateName = this.updateName.bind(this)
     }
 
     updateName() {
-        let { name } = this.props;
-        name = "Other name"
+        //let name = this.props.name
+        // let { name } = this.props;
+        //name = "Other name"
     }
 
     render() {
         return(
-            <Box>
-            <h1>Desafio 4</h1>
-            <h1>{this.state.name}</h1>
+            <Box p='Props são read-only portanto não podem ser alteradas' h1='Desafio 4' h2={this.state.name}>
             <Button onClick={this.updateName} >Change state</Button>
             </Box>
         )

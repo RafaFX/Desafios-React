@@ -20,10 +20,7 @@ export default class List2 extends React.Component {
     render(){
 
         return(
-            <Box>
-            <h1>Desafio 2</h1>
-            <h2>{this.state.name}</h2>
-            <p>Uma vez que utilizado o método "setState" em um class component devo utilizar uma arrow function ou bindar em um construtor o método para não ocorrer um erro de escopo.</p>
+            <Box h1='Desafio 2' h2={this.state.name} p='Uma vez que utilizado o método "setState" em um class component devo utilizar uma arrow function ou bindar em um construtor o método para não ocorrer um erro de escopo.' >
             <Button onClick={this.updateMyState}>
                 Change state
             </Button>

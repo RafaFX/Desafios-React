@@ -15,21 +15,17 @@ export default class List3 extends React.Component{
     }
     
 
-    myCallback() {
-        console.log(this.state.name)
+    myCallback(name) {
+        console.log(name)
     }
 
     updateMyState(myCallback) {
-        debugger
-        this.setState({ name: "Rafael Lima"} ,myCallback);
+        this.setState({ name: "Rafael Lima"} , () => myCallback(this.state.name));
     }
     
     render() {
         return(
-            <Box>
-            <h1>Desafio 3</h1>
-            <h1>{this.state.name}</h1>
-            <p>Irá chegar o valor antigo, a má prática está no fato de executar o método "myCallback" dentro de outro método ao invés de apenas declará-lo, dessa forma ele vai utilizar o valor "antigo" do state.</p>
+            <Box h1='Desafio 3' h2={this.state.name} p='Irá chegar o valor antigo, a má prática está no fato de executar o método "myCallback" dentro de outro método ao invés de apenas declará-lo, dessa forma ele vai utilizar o valor "antigo" do state.' >
             <Button onClick={() =>this.updateMyState(this.myCallback)} >Change state</Button>
             </Box>
         )
