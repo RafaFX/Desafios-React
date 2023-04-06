@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './Header';
+import List1 from './List1';
+import List2 from './List2';
+import List3 from './List3';
+import List4 from './List4';
+import List5 from './List5';
+import { List6 } from './List6';
+import List7 from './List7';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header />
+    <div className='boxApp' >
+    <List1 />
+    <List2 />
+    <List3 />
     </div>
+    <div className='boxApp'>
+    <List4 />
+    <List5 />
+    <List6 />
+    </div>
+    <div className='boxApp'>
+    <List7 />
+    </div>
+    </>
   );
 }
 

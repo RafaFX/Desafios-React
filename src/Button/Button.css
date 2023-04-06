@@ -1,0 +1,16 @@
+.buttonState{
+    background-color: #6278f7;
+
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.buttonState:hover {
+    color: #95ffd4;
+}
